@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1st example of onclick function -->
+    <p id="demo" >This is Paragraph</p>
+<button onclick="change()"> Click!</button>
+<script>
+    function change(){
+        document.getElementById("demo").innerHTML=("This is Heading");
+    }
+
+</script>
+<!-- 2nd example of onclick function -->
+<h1 id="container" >Good Job!</h1>
+  <button onclick="str()"> Click!</button>
+  <script>
+      function str(){
+          document.getElementById("container").innerHTML=("Keep It Up!");
+      }
+</script>
+<!--3rd example-->
+
+<img id="image" src="cat.jpeg" height="10%" width="30%">
+<button onclick="tap()">Hit</button>
+<script>
+    function tap(){
+        document.getElementById("Image").innerHTML=image.src="verna.jpg";
+    }
+</script>
+
+<!--4th example-->
+<SCRipt>
+function func(){
+    alert ("WELCOME TO W3SCHOOL")
+}
+</SCRipt>
+<h3>This is an example of using onclick attribute in HTML.</h3>
+<p>click the following button to see the effect.</p>
+<button onclick="func()">Click!</button>
+
+<!--5th example-->
+
+<h1 id="new"> TODAY IS GOOD DAY</h1>
+<BUTton onclick="content()"> click!</BUTton>
+<script>
+    function content(){
+         let text = document.getElementById("new").innerHTML
+
+         document.getElementById("new").innerHTML= text.replace("GOOD" , "GREAT");
+    }
+</script>
+
+</body>
+</html>

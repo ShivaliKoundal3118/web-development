@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+    function renderApp() {
+      document.getElementById("demo").innerHTML = "Welcome Home!";
+    }
+    
+    function renderLogin() {
+      document.getElementById("demo").innerHTML = "Please log in";
+    }
+    
+    let authenticated = true;
+    
+    authenticated ? renderApp() : renderLogin();
+    
+    </script>
+
+    <h1 id="demo2"></h1>
+
+    <script>
+        function abc() {
+            document.getElementById("demo2").innerHTML="TOXSL";
+        }
+        function xyz() {
+            document.getElementById("demo2").innerHTML="C.S soft solution";
+        }
+        let q = true;
+
+        q ? abc(): xyz();
+    </script>
+
+    <p id="demo3"></p>
+    <script>
+        function z() {
+            document.getElementById("demo3").innerHTML="visit this website";
+        }
+        function d() {
+            document.getElementById("demo3").innerHTML="Facebook,LinkedIn"
+        }
+        const b=false;
+        b ? z() : d();
+    </script>
+</body>
+</html>

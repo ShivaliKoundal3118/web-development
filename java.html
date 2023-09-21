@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1>JAVASCRIPT</h1>
+
+
+    <img id="bulbimage" onclick="imagechange()" src="pic_bulboff.gif" height="200" width="100">
+    <p>Click the light bulb to turn on/off the light.</p>
+    <script>
+        function imagechange() {
+            var image = document.getElementById('bulbimage');
+            if (image.src.match("bulbon")) {
+                image.src = "pic_bulboff.gif";
+            } else {
+                image.src = "pic_bulbon.gif";
+            }
+
+        }
+    </script>
+
+
+
+</body>
+<script src="tut.js"></script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function areAnagrams(str1,str2){
+            const Str1 = str1.split('').sort().join('');
+            const Str2 = str2.split('').sort().join('');
+            return Str1=== Str2;
+        }
+        const string1="shivali"
+        const string2="vishali"
+        if(areAnagrams(string1,string2)){
+            console.log("The string are anagrams.")
+        }else   
+        {
+            console.log("The string are not anagrams.")
+        }
+    </script>
+<script>
+    //2nd example
+
+    function sort(i,v){
+        const b= i.split('').sort().join('');
+        const h= v.split('').sort().join('');
+        return i===v;
+    }
+        let r="silent";
+        let j="listen";
+        if(sort(r,j)){
+            console.log("The string are anagram.")
+        }else{
+            console.log("The string are not anagrams.")
+        
+    }
+</script>
+</body>
+</html>

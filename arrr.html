@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Duplicate Array:</h3>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>html</li>
+        <li>javascript</li>
+        <li>css</li>
+        <li>python</li>
+        <li>javascript</li>
+        <li>php</li>
+    </ul>
+
+    <button onclick="btn()">click!</button><br><br>
+    <h3>Remove Duplicate Array:</h3>
+    <p id="text"></p> 
+     
+    <script>
+        function btn(){
+        let arr = ["html", "css","html", 
+                "javascript","css",  "python","javascript","php"];
+                document.getElementById("text").innerHTML=arr.filter((item,
+        index) => arr.indexOf(item) === index);
+
+           
+        }
+    
+     
+        console.log(removeDuplicates(arr));
+    </script>
+</body>
+</html>

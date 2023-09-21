@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="demo" onclick="imagechange()" src="pic_bulboff.gif" height="200" width="100">
+    <p>Tap on bulb</p>
+    <script>
+        function imagechange() {
+            var image = document.getElementById("demo")
+            console.log(image)
+            if (image.src.match('bulbon')) {
+                image.src = "pic_bulboff.gif"
+
+            }
+
+            else {
+                image.src = "pic_bulbon.gif"
+
+            }
+        }
+    </script>
+</body>
+
+</html>

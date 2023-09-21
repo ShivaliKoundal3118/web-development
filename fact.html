@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter Number: <input  id="num">
+    <button onclick="btn()">click!</button><br><br>
+    Output: <input id="ans">
+    <script> 
+function btn(){
+
+var i, n, fact;
+fact=1;
+n=Number(document.getElementById("num").value);
+for(i=1; i<=n; i++)  
+{
+fact= fact*i;
+}  
+document.getElementById("ans").value= fact;
+}
+      
+    </script>
+
+
+</body>
+
+</html>

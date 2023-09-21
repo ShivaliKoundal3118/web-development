@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!--sTRING in replace method-->
+
+    <!--1st example-->
+    <h1>STRING IN REPLACE METHOD</h1>
+    <p id="demo">VISIT IN PUNJAB!</p>
+    <button onclick="hit()">Tap!</button>
+    <script>
+        function hit() {
+            let text = document.getElementById("demo").innerHTML
+            document.getElementById("demo").innerHTML = text.replace("PUNJAB!", "HIMACHAL PARDESH!");
+        }
+    </script>
+    <!--2ND EXAMPLE-->
+    <p id="change">Today is Sunny Day.I love Sunny days!</p>
+    <button onclick="abc()">click</button>
+    <script>
+        function abc() {
+            let str = document.getElementById("change").innerHTML;
+            document.getElementById("change").innerHTML = str.replace(/Sunny/g, "Cloudy");
+        }
+    </script>
+
+
+    <!--string in UpperCase method-->
+
+    <!--1st example-->
+    <h1>STRING IN UpperCase METHOD</h1>
+    <h1 id="upper">my name is shivali.</h1>
+    <button onclick="btn()">Tap!</button>
+    <script>
+        function btn() {
+            let z = document.getElementById("upper").innerHTML;
+            document.getElementById("upper").innerHTML = z.toUpperCase();
+        }
+    </script>
+
+    <!--2nd example-->
+    <h1 id="new">welcome in html tutorials. </h1>
+    <button onclick="copy()">Click!</button>
+    <script>
+        function copy() {
+            let x = document.getElementById("new").innerHTML;
+            document.getElementById("new").innerHTML = x.toUpperCase();
+        }
+    </script>
+    <!--string by concat method-->
+    <!--1st example-->
+    <h1>STRING IN CONCAT METHOD</h1>
+    <p id="tut">welcome in<BR>youtube my channel</p>
+
+    <button onclick="con()">tap</button>
+    <script>
+        function con() {
+            let j = "welcome in"
+            let d = "youtube my channel"
+
+            document.getElementById("tut").innerHTML;
+            document.getElementById("tut").innerHTML = j.concat(" " + d);
+        } 
+    </script>
+
+    <!--2ND example-->
+    <p id="greet"></p>
+    <script>
+        let n = "TOXSL PRIVATE"
+        let b = "LIMITED COMPANY"
+        let m = n.concat("" + b);
+        document.getElementById("greet").innerHTML = m;
+    </script>
+
+    <!--string in lowercase method-->
+    <!---->
+    <h1>STRING IN lowercase METHOD</h1>
+    <h1 id="lower">I LOVE INDIA.</h1>
+    <button onclick="low()">Click</button>
+    <script>
+        function low() {
+            let q = document.getElementById("lower").innerHTML;
+            console.log(q)
+            document.getElementById("lower").innerHTML = q.toLowerCase();
+        }
+    </script>
+
+    <!--2nd example-->
+    <h1 id="head"></h1>
+    <script>
+        let r = "JAVASCRIPT IS THE WORLD'S MOST POPULAR PROGRAMMING LANGUAGE."
+        document.getElementById("head").innerHTML = r.toLowerCase();
+    </script>
+
+    <!--string in trim method-->
+
+    <!--1st example-->
+    <h1>STRING IN TRIM METHOD.</h1>
+    <p id="try"></p>
+    <script>
+        let y = "    +MY NAME IS SHIVALI   ";
+        let k = y.trim();
+        document.getElementById("try").innerHTML = "length y=" + y.length + "<br> Length k = " + k.length;
+    </script>
+
+    <!--2nd example-->
+   
+    <p id="first"></p>
+    <button onclick="me()"> Click it!</button>
+    <script>
+        let j = "I'm Here+   ";
+        let l = j.trim();
+        function me(){
+        document.getElementById("first").innerHTML = "length j=" + j.length + "<br> Length l= " + l.length;
+        }
+        </script>
+
+
+</body>
+
+</html>
